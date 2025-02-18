@@ -1298,10 +1298,10 @@ function CheckBossDimension()
 	end
 end;
 local L_33_ = loadstring(game:HttpGet("https://you.whimper.xyz/sources/CokkaHub/ui.lua"))()
-local L_34_ = L_33_:Window("Cokka Hub 25ms was here", Enum.KeyCode.LeftControl)
-print("|COKKA DEBUG| Anti AFK")
+local L_34_ = L_33_:Window("Nerd hub og", Enum.KeyCode.LeftControl)
+print("|Fuching DEBUG| Anti AFK")
 game:GetService("Players").LocalPlayer.Idled:connect(function()
-	print("|COKKA DEBUG| AFK detected, prevented +1")
+	print("|FUCKING DEBUG| AFK detected, prevented +1")
 	L_7_:ClickButton2(Vector2.new())
 	L_7_:Button2Down(Vector2.new(0, 0), workspace.CurrentCamera.CFrame)
 	wait(1)
@@ -1896,14 +1896,14 @@ L_35_.Setting:Toggle("Anti Stranger Join", false, function(L_221_arg0)
 	_25msShared.AntiStranger = L_221_arg0
 end)
 spawn(function()
-	print("|COKKA DEBUG| Anti Stranger Join")
+	print("|FUCKING DEBUG| Anti Stranger Join")
 	while wait() do
 		pcall(function()
 			if _25msShared.AntiStranger then
 				for L_222_forvar0, L_223_forvar1 in pairs(game:GetService("Players"):GetChildren()) do
 					if L_223_forvar1.Data.Level.Value >= 2601 or L_223_forvar1.Data.Level.Value > 20000 then
-						game.Players.LocalPlayer:Kick("Cokka Hub found an Admin!")
-						print("|COKKA DEBUG| Detected Stranger, Hopping Server...")
+						game.Players.LocalPlayer:Kick("Nerd Hub found an Admin!")
+						print("|FUCKING DEBUG| Detected Stranger, Hopping Server...")
 						Hop()
 					end
 				end

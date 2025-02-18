@@ -21,10 +21,31 @@ local Tabs = {
 
 local Options = Fluent.Options
 
-do
-    Fluent:Notify({
-        Title = "Loaded Nerdhub",
-        Content = "Wait ~5s",
-        SubContent = "SubContent", -- Optional
-        Duration = 5 -- Set to nil to make the notification not disappear
-    })
+local Plid = game.PlaceId;
+if (v18 == 2753915549) then
+    Sea1 = true;
+elseif (v18 == 4442272183) then
+    Sea2 = true;
+elseif (v18 == 7449423635) then
+    Sea3 = true;
+else
+    game:Shutdown();
+end
+
+game:GetService("Players").LocalPlayer.Idled:connect(function()
+    game:GetService("VirtualUser"):Button2Down(Vector2.new(0, 0), workspace.CurrentCamera.CFrame);
+    wait();
+    game:GetService("VirtualUser"):Button2Up(Vector2.new(0, 0), workspace.CurrentCamera.CFrame);
+end);
+Sea1 = false;
+Sea2 = false;
+Sea3 = false;
+local v19 = game.PlaceId;
+if (v19 == 2753915549) then
+    Sea1 = true;
+elseif (v19 == 4442272183) then
+    Sea2 = true;
+elseif (v19 == 7449423635) then
+    Sea3 = true;
+end
+

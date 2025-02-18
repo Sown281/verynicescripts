@@ -1,7 +1,7 @@
 -- discord.gg/25ms
 
 
-shared.LoaderTitle = "Đăng Ký Kênh Min Gaming";
+shared.LoaderTitle = "Dev by lsown";
 shared.LoaderKeyFrames = {
     [1] = {
         1,
